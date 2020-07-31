@@ -5,6 +5,10 @@ public class HeadsorTails{
     public static void main(String args[]) throws IOException{
 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 
+	System.out.print("Who are you? \n> ");
+	String user=br.readLine();
+	System.out.println("Hello, "+user+"!");
+
 	int round[]=new int[3];
 	
 	round[0]=(int)(Math.random()*2);
@@ -28,3 +32,4 @@ public class HeadsorTails{
 	System.out.println("Heads: "+head+", Tails: "+tail);
     }
 }
+
